@@ -33,17 +33,8 @@ def merge_sort(arr):
         sep = len(arr)//2
         l = arr[:sep] 
         r = arr[sep:]
-        # print(l,r)
-        arr = merge(merge_sort(l),merge_sort(r))
-        # print(arr)
-        return arr 
+        return merge(merge_sort(l),merge_sort(r))
     return arr
-
-# test = [2,1,3,8,7,6,5]
-
-
-# test = [0,3,2,5,4,7,6,9,8,10]
-# print(merge_sort(test))
 
 
 # STRETCH: implement an in-place merge sort algorithm
